@@ -1,8 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Ensure Bootstrap JS is loaded
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Ensure Bootstrap JS is loaded
 import 'animate.css';
 import Link from 'next/link';
-
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-white py-3 px-4 position-fixed w-100 animate__animated animate__fadeInDown animate__slower" style={{ zIndex: 1000 }}>
