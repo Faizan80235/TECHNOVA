@@ -1,0 +1,42 @@
+/* Full-Screen Loading Overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Green Circular Spinner */
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 8px solid #d4f4dd;
+  border-top: 8px solid blue; /* Green Color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Blur Effect on Page */
+.blur-effect {
+  filter: blur(8px);
+  pointer-events: none;
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+}
