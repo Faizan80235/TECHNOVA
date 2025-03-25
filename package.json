@@ -26,5 +26,11 @@
   "devDependencies": {
     "eslint": "9.23.0",
     "eslint-config-next": "15.2.3"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }
